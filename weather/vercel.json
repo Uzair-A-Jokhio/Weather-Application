@@ -9,6 +9,9 @@
             "src": "/(.*)",
             "dest": "weather/wsgi.py"
         }
-    ]
+    ],
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/" }
+      ]
 
 }
