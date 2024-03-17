@@ -26,7 +26,7 @@
     <br /><br /> <br>
     <div id="jumbotron" class="jumbotron" style="text-align: center; margin-top:-50px">
         <div class="container">
-            <img src="{% static 'images/weather_icon.png' %}" class="image" style="width:100px; margin-right: 20px;">
+            <img src="{% static 'images/icon.png' %}" class="image" style="width:100px; margin-right: 20px;">
             <div class="text">
                 <h1 class="display-5">Weather Desktop Application </h1>
                 <h5>Using Django Framework</h5>
@@ -46,13 +46,15 @@
         </div>
         <form>
     </nav>
+
+
     <br> <br>
     <div class="row">
       {% if country_code and coordinate and temp and pressure and humidity %}
       <div class="col d-flex justify-content-center" ">
         <div class=" card text-white bg-light mb-6">
         <div class=" card-body">
-            <h4><span class="badge badge-primary">Name :</span> {{name}}</h4>
+          <h4><span class="badge badge-primary">Name :</span> {{name}}</h4>
           <h4><span class="badge badge-primary">Country Code :</span> {{country_code}}</h4>
           <h4><span class="badge badge-primary">Coordinates [X,Y] :</span> {{coordinate}}</h4>
           <h4><span class="badge badge-primary">Temperature in Celsius :</span> {{temp}}</h4>
@@ -64,6 +66,6 @@
         </div>
         {% endif %}
       </div>
-  </body>
 
+  </body>
 </html>
